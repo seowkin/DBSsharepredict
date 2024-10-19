@@ -10,7 +10,7 @@ def index():
 @app.route("/prediction_DBS",methods=["GET","POST"])
 def prediction_DBS():
     q = float(request.form.get("q"))
-    return(render_template("prediction_DBS.html",r=90.2+(-50.6*q)))
+    return(render_template("prediction_DBS.html",r=90.22858515+(-50.60094302*q)))
 
 if __name__ == "__main__":
     app.run()
